@@ -141,7 +141,7 @@ strong {
 }
 
 .section-bg {
-  background-color: var(--section-bg-color);
+  background-color: #edeff1;
 }
 
 .section-overlay {
@@ -524,21 +524,18 @@ strong {
 
 .custom-block-wrap .custom-block {
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
   bottom: 0;
   right: 0;
+  background-color: #181616;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
 }
 
 .custom-block-wrap .custom-block :hover {
   color: #e1e110;
-}
-
-.custom-block {
-  background-color: #181616;
-  border-radius: 10px;
-  padding: 15px;
-  margin-right: 5px;
-  margin-bottom: 10px;
 }
 
 .custom-block:hover {
@@ -547,6 +544,7 @@ strong {
 
 .custom-block .custom-icon,
 .custom-block a {
+  font-size: 14px;
   color: var(--white-color);
 }
 
@@ -865,6 +863,15 @@ strong {
 /*---------------------------------------
   INTRO        
 -----------------------------------------*/
+.col-lg-6 img {
+  transition: transform 0.5s ease, border-radius 0.5s ease, box-shadow 0.5s ease;
+}
+
+.col-lg-6 img:hover {
+  transform: rotateX(15deg) scale(1.05); /* Miring ke belakang dan sedikit membesar */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Menambahkan efek bayangan */
+}
+
 .intro-section {
   padding-top: 50px;
 }
@@ -1344,7 +1351,7 @@ strong {
   width: 80px;
   height: 80px;
   object-fit: cover;
-  padding: 15px;
+  padding: 3px;
 }
 
 .site-footer-title,
